@@ -73,19 +73,31 @@ let hasJavaScript; // Your code here
 let codingPosition; // Your code here
 let startsWithWelcome; // Your code here
 let endsWithToday; // Your code here
+hasJavaScript = inputString.includes("JavaScript");
+codingPosition = inputString.indexOf("Coding");
+startsWithWelcome = inputString.startsWith("Welcome");
+endsWithToday = inputString.endsWith("today.");
+
 
 // 2. Transforming
 let lowercaseString; // Your code here
 let uppercaseString; // Your code here
 let trimmedString; // Your code here
 let replacedString; // Your code here
+lowercaseString = inputString.toLowerCase();
+uppercaseString = inputString.toUpperCase();
+trimmedString = inputString.trim();
+replacedString = trimmedString.replace("JavaScript", "coding");
 
 // 3. Breaking Apart
 let wordsArray; // Your code here
+wordsArray = replacedString.split(" ");
 
 // 4. Retrieving
 let firstCharacter; // Your code here
 let extractedBootcamp; // Your code here
+firstCharacter = trimmedString.charAt(0);
+extractedBootcamp = replacedString.slice(22,30);
 
 // Log all results
 console.log({
